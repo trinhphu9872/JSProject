@@ -5,8 +5,9 @@ function countdown() {
     const year = new Date();
     const second = Math.floor((YearNext - year) / 1000);
     const days = Math.floor(second / 3600 / 24)
-    const hour = Math.floor(days * 24)
-    const min = Math.floor(hour * 60)
+    const hour = Math.floor(second / 3600) % 24
+    const min = Math.floor(second / 60) % 60
+    const sec = Math.floor(second) % 60
     console.log(days);
     console.log(hour);
     console.log(min);
@@ -14,7 +15,7 @@ function countdown() {
     getId("days").innerHTML = days
     getId("hours").innerHTML = hour
     getId("mins").innerHTML = min
-    getId("seconds").innerHTML = second
+    getId("seconds").innerHTML = sec
 }
 
 function getId(id) {
