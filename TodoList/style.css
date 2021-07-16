@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 10px 0;
+}
+h3 {
+    font-size: 1rem;
+    margin: 0 0 10px 20px;
+}
+.add {
+    width: 30px;
+
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.671);
+    border: none;
+    color: aliceblue;
+    border-radius: 8px;
+}
+input[type="text"] {
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+    height: 31px;
+    padding: 5px;
+}
+.clear {
+    margin-left: 75px;
+    padding: 5px;
+    border-radius: 8px;
+}
+body {
+    background: #67b26f; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #4ca2cd,
+        #67b26f
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #4ca2cd,
+        #67b26f
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.print {
+    background-color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+.printTask {
+    margin: 20px 0;
+}
+.container-quiz {
+    background: rgba(255, 255, 255, 0.55);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 30px 10px;
+}
